@@ -12,18 +12,18 @@ const ap = new APlayer({
     listFolded: false,
 
     audio: [{
-            name: '一直很安静',
-            artist: '阿桑',
-            lrc: '/music/lrc/一直很安静 - 阿桑.lrc',
-            cover: 'https://p1.music.126.net/SpovasHBud2A1qXXADXsBg==/109951163167455610.jpg?param=300x300',
-            url: 'http://q0fzyzixq.bkt.clouddn.com/audio/mp3/一直很安静 - 阿桑.mp3'
+            name: '没什么大不了（なんでもないや）（女声翻唱remix）',
+            artist: 'Maxone,夏璃夜',
+            lrc: '没什么大不了（なんでもないや）（女声翻唱remix）-Maxone,夏璃夜.lrc',
+            cover: 'http://music.163.com/#/song?id=445886994',
+            url: 'http://music.163.com/song/media/outer/url?id=445886994.mp3'
                   },
         {
-            name: '亲爱的旅人啊（Cover：木村弓）',
-            artist: '周深',
-            lrc: '/music/lrc/亲爱的旅人啊（Cover：木村弓）-周深.lrc',
-            cover: 'https://p1.music.126.net/1YrCPOBV314i-mTtlDg8mQ==/109951164148664637.jpg?param=300x300',
-            url: 'http://q0fzyzixq.bkt.clouddn.com/audio/mp3/亲爱的旅人啊（Cover：木村弓） - 周深.mp3'
+            name: '我们的歌',
+            artist: '王力宏',
+            lrc: '',
+            cover: '',
+            url: '/music/我们的歌 - 王力宏.mp3'
                   }
         ]
 });
