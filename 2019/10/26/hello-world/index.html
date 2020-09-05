@@ -103,24 +103,43 @@
 			
 			<!--
 			
-            
-            
-            
-            
-            <div style="margin-right:10px;margin-left:0; padding:5px 0">
-                <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="250" height="86" src="//music.163.com/outchain/player?type=2&id=411907505&auto=1&height=66"></iframe>
-            </div>
-            
+						
 			-->
 			
 			
-				<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=250 height=70 src="//music.163.com/outchain/player?type=2&id=445886994&auto=1&height=66"></iframe>
 			
 			
-		</nav>
+			
+			<!-- 《左侧边栏添加--APlayer音乐播放器：详见：https://aplayer.js.org/#/zh-Hans/ -->
+			
+				<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
 
-		
-		
+				<div id="aplayer" style="text-align:left"></div>
+				<script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
+				<script src="https://cdn.jsdelivr.net/npm/color-thief-don@2.0.2/src/color-thief.js"></script>
+
+				<!-- 为方便修改，添加一个配置文件，修改时直接修改配置文件即可。 -->
+				<script type="text/javascript" src="/js/APlayer_config.js"></script>
+
+				<!-- 根据封面自适应主题色，主要是作用于进度条 -->
+				<script type="text/javascript">
+					  const colorThief = new ColorThief();
+					  const setTheme = (index) => {
+						if (!ap.list.audios[index].theme) {
+						  colorThief.getColorAsync(ap.list.audios[index].cover, function(color) {
+							ap.theme(`rgb(${color[0]}, ${color[1]}, ${color[2]})`, index);
+						  });
+						}
+					  };
+					  setTheme(ap.list.index);
+					  ap.on('listswitch', (data) => {
+						setTheme(data.index);
+					  });       
+				</script>
+			
+			<!-- 左侧边栏添加--APlayer音乐播放器》 -->
+
+		</nav>
 	</header>		
 </div>
 
