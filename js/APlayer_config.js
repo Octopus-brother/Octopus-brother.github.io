@@ -13,7 +13,7 @@ const ap = new APlayer({
 
     audio: [
 		{
-            name: '没什么大不了（なんでもないや）（女声翻唱remix）',													<!-- 歌曲 -->
+            name: '没什么大不了',																						<!-- 歌曲 -->
             artist: 'Maxone,夏璃夜',																					<!-- 歌手 -->
             lrc: '',																									<!-- 歌词 -->
             cover: 'http://p2.music.126.net/QvhFaxmaBYJnKsnk4ndsFQ==/109951162821138535.jpg?param=130y130',				<!-- 图片 -->
@@ -79,8 +79,8 @@ const ap = new APlayer({
             name: 'Senbonzakura [SS-Extended+Bass]',
             artist: 'Lindsey Stirling',
             lrc: '',
-            cover: 'http://p1.music.126.net/4tTN8CnR7wG4E1cauIPCvQ==/109951163240682406.jpg?param=130y130',
-            url: 'http://music.163.com/song/media/outer/url?id=4875307.mp3'
+            cover: 'http://p1.music.126.net/MaHPfo3c47UtzzhMjMYNAg==/7871403744232400.jpg?param=130y130',
+            url: 'http://music.163.com/song/media/outer/url?id=32139848.mp3'
                   },
 		{
             name: 'I Want My Tears Back',
