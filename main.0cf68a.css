@@ -964,7 +964,7 @@ i {
 }
 
 body, button, input, select, textarea {
-	color: #1a1a1a;
+	color: ##ffffff;
 	font-family: lucida grande, lucida sans unicode, lucida, helvetica,
 		Hiragino Sans GB, Microsoft YaHei, WenQuanYi Micro Hei, sans-serif;
 	font-size: 16px;
@@ -1004,12 +1004,24 @@ body {
 .body-wrap {
 	margin-bottom: 80px
 }
-
+/*更换背景图片*/
 .mid-col {
 	position: absolute;
 	right: 0;
 	min-height: 100%;
-	background: #eaeaea;
+	/*background: #eaeaea;*/
+	background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), 
+    url('http://pic.netbian.com/uploads/allimg/190211/235139-15499002992154.jpg') no-repeat 0% 0%/ cover;
+	/* http://pic.netbian.com/uploads/allimg/200729/221519-1596032119f704.jpg */
+	/* /background/Rbackground.jpg */
+	/* http://pic.netbian.com/uploads/allimg/180510/102118-1525918878c232.jpg */
+	/* http://pic.netbian.com/uploads/allimg/190422/211159-15559387195457.jpg */
+	/* http://pic.netbian.com/uploads/allimg/190211/235139-15499002992154.jpg */
+	/*  */
+	/*  */
+	/*  */
+	background-attachment:fixed;
+	background-size:cover;
 	left: 300px;
 	width: auto
 }
@@ -1024,7 +1036,7 @@ body {
 }
 
 .left-col {
-	background: #fff;
+	background: #e9f2f3;
 	width: 300px;
 	position: fixed;
 	opacity: 1;
@@ -2281,8 +2293,8 @@ to {
 	border: 1px solid #ddd;
 	border-top: 1px solid #fff;
 	border-bottom: 1px solid #fff;
-	background: #fff;
-	transition: all .2s ease-in
+	/*background: #fff;*/
+	background: rgba(255,255,255,0.5);
 }
 
 .article img {
@@ -3185,7 +3197,7 @@ to {
 	font-size: 12px;
 	font-family: Menlo, Monaco, Andale Mono, lucida console, Courier New,
 		monospace;
-	text-shadow: 0 1px #fff;
+	text-shadow: 0 1px #cc448e;
 	position: absolute;
 	bottom: 30px;
 	opacity: .6;
